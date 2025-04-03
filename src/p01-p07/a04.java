@@ -37,7 +37,7 @@ public class a04 extends JFrame implements GLEventListener {
         canvas.addGLEventListener(this);
 
         JPanel controlPanel = new JPanel();
-        spokeSlider = new JSlider(4, 24, n);
+        spokeSlider = new JSlider(1, 20, n);
         spokeSlider.addChangeListener(new ChangeListener() {
             public void stateChanged(ChangeEvent e) {
                 n = spokeSlider.getValue();
@@ -66,15 +66,19 @@ public class a04 extends JFrame implements GLEventListener {
         float R = 3.0f;
         float r1 = 0.5f;
         float r2 = 0.1f;
-        float kat2 = 0.0f;
-
-        Pierscien.Draw(gl, R, r1, 20, 20);
+        gl.glColor3f(1.0f, 0.0f, 0.0f);
+        Pierscien.Draw(gl, R, r1, 80, 8);
 
         gl.glRotatef(90.0f, 1.0f, 0.0f, 0.0f);
+        gl.glColor3f(1.0f, 1.0f, 1.0f);
         for (int i = 0; i < n; i++) {
-            kat2 += 360.0f / n;
+            float kat2 = 360.0f * i / n;
+            
+            gl.glPushMatrix();
             gl.glRotatef(kat2, 0.0f, 0.0f, 1.0f);
-            Walec.Draw(gl, r2, R * 2, n, n);
+            gl.glTranslatef(0.0f, R/2.0f, 0.0f);
+            Walec.Draw(gl, r2, R, n, n);
+            gl.glPopMatrix();
         }
 
         gl.glFlush();
