@@ -1,7 +1,0 @@
-{
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "/Users/nazarii/jogamp-all-platforms/jar/jogl-all.jar",
-        "/Users/nazarii/jogamp-all-platforms/jar/gluegen-rt.jar"
-    ]
-}
