@@ -1,3 +1,5 @@
 .DS_Store
 /src/p01-p07/.idea
 src/.DS_Store
+out
+.DS_Store

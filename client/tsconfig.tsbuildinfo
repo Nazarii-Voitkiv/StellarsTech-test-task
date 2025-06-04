@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/api/notes.ts","./src/components/filterbar/filterbar.tsx","./src/components/notecard/notecard.tsx","./src/components/noteform/noteform.tsx","./src/components/noteslist/noteslist.tsx","./src/pages/homepage/homepage.tsx","./src/types/note.ts","./src/types/css.d.ts","./src/utils/formatdate.ts"],"errors":true,"version":"5.8.3"}
